@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>TODO</title>
+</head>
+<body class="container bg-info">
+
+    <h1 class="text-white">TODO</h1>
+    
+    <form class="d-flex flex-column gap-2 py-6 mt-2" action="#">
+        <label for="todoTitel" class="fs-4"> Title </label>
+        <input class="input-group-text  w-50" type="text" id="todoTitel" placeholder="Enter a title " autoComplete="off">
+        <label for="todoDesc" class="fs-4"> Discription</label>
+        <textarea class="input-group-text w-50" id="todoDesc" placeholder="Enter a discription" ></textarea>
+        <button id="todoSubmit" class="btn btn-light w-25">Submit</button>
+    </form>
+  
+    <ul class="d-flex flex-column gap-2 ps-0" id="mainTodo"></ul>
+
+    <noscript>NO JS</noscript>
+    
+    <script src="index.js"></script>
+</body>
+</html>
